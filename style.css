@@ -65,13 +65,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   line-height: 2rem;
   background-color: #eccfaa;
   font-size: 1.2rem;
   border: 2px solid #caa486;
 }
 #content .main-content .hours-loc .main-descrip {
-  flex: 0 0 50%;
+  flex: 0 1 100%;
+  padding: 0 5%;
+  text-align: center;
 }
 #content .main-content .hours-loc * {
   border-left: 1px solid rgba(0, 0, 0, 0.24);
@@ -86,7 +89,7 @@ body {
   font-family: "Great Vibes", cursive;
   background-color: #caa486;
   text-shadow: 1px 1px white;
-  border: 3px solid #eccfaa;
+  border: 3px solid #4d360c;
 }
 #content .main-content #testimonials {
   display: flex;
@@ -99,6 +102,9 @@ body {
 }
 #content .main-content #testimonials .test-section small {
   font-size: 0.8rem;
+}
+#content .main-content #testimonials .test-section p {
+  font-style: italic;
 }
 #content .main-content #testimonials .test-section .test-img {
   background-size: cover;
