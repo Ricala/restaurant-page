@@ -4,6 +4,7 @@ function appendFrame(content) {
   content.appendChild(heroMain());
   content.appendChild(heroRight());
   content.appendChild(heroCaption());
+  content.appendChild(mainTabs());
   content.appendChild(mainContent());
   content.appendChild(footerContent());
 }
@@ -40,6 +41,32 @@ function heroCaption() {
 
   heroCaption.appendChild(captionText);
   return heroCaption;
+}
+
+function mainTabs() {
+  let tabDiv = document.createElement('div');
+  tabDiv.className = "tabs"
+
+  let aboutTab = document.createElement('button');
+  aboutTab.className = "tabLinks";
+  aboutTab.id = "aboutTab";
+  aboutTab.onclick = ""
+  aboutTab.appendChild(document.createTextNode("About"));
+  tabDiv.appendChild(aboutTab);
+
+  let menuTab = document.createElement('button');
+  menuTab.className = "tabLinks";
+  menuTab.id = "menuTab";
+  menuTab.appendChild(document.createTextNode("Menu"));
+  tabDiv.appendChild(menuTab);
+
+  let contactTab = document.createElement('button');
+  contactTab.className = "tabLinks";
+  contactTab.id = "contactTab";
+  contactTab.appendChild(document.createTextNode("Contact"));
+  tabDiv.appendChild(contactTab);
+
+  return tabDiv;
 }
 
 function mainContent() {

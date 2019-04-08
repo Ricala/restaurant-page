@@ -70,6 +70,21 @@ body {
     border-top: 2px solid rgba(26, 25, 25, 0.541);
   }
 
+  .tabs {
+    grid-column: 2 / -2;
+    margin-top: 1%;
+  }
+  .tabLinks {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100px;
+    margin-right: 1%;
+    border: none;
+    background-color: rgb(238, 211, 188);
+    outline: none;
+  }
+
   .main-content {
     grid-column: 2 / -2;
     background-color: rgb(238, 211, 188);
@@ -78,6 +93,8 @@ body {
     * {
       margin: 2% 0;
     }
+
+    
 
     .hours-loc {
       display: flex;
@@ -93,6 +110,8 @@ body {
         flex: 0 1 100%;
         padding: 0 5%;
         text-align: center;
+        margin-top: 0;
+        padding-top: 0;
       }
 
       * {
@@ -157,6 +176,59 @@ body {
 
       
     }
+  }
+
+  .menu-items {
+    border: 2px solid rgba(0, 0, 0, 0.562);
+    display: flex;
+    background-color: rgba(210, 180, 140, 0.486);
+
+    h3 {
+      font-family: $fancy-text;
+      font-size: 2rem;
+      text-shadow: 2px 2px white;
+    }
+
+    
+    .menu-imgs {
+      min-width: 200px;
+      height: 160px;
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      border: 3px solid rgba(0, 0, 0, 0.562);
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      margin: 1%;
+    }
+
+    #menu-burger {
+      background-image: url(../images/burger.png);
+    }
+
+    #menu-ribs {
+      background-image: url(../images/ribs.png);
+    }
+
+    #menu-steak {
+      background-image: url(../images/steak.png);
+    }
+
+    #menu-fish {
+      background-image: url(../images/fish.png);
+      background-position: bottom 10px;
+    }
+
+    #menu-ice-cream {
+      background-image: url(../images/ice-cream.png);
+    }
+
+    #menu-pie {
+      background-image: url(../images/pie.png);
+      background-position: left;
+    }
+
+
   }
 
   footer {
