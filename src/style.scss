@@ -83,13 +83,16 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-items: center;
       line-height: 2rem;
       background-color: $sect-color-alt;
       font-size: 1.2rem;
       border: 2px solid $sect-color;
 
       .main-descrip {
-        flex: 0 0 50%;
+        flex: 0 1 100%;
+        padding: 0 5%;
+        text-align: center;
       }
 
       * {
@@ -108,7 +111,7 @@ body {
       font-family: $fancy-text;
       background-color: $sect-color;
       text-shadow: 1px 1px $font-shadow;
-      border: 3px solid $sect-color-alt;
+      border: 3px solid rgb(77, 54, 12);
 
     }
 
@@ -124,6 +127,10 @@ body {
 
         small {
           font-size: 0.8rem;
+        }
+
+        p {
+          font-style: italic;
         }
 
         .test-img {
