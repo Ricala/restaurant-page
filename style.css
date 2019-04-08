@@ -42,6 +42,17 @@ body {
   background-position: bottom;
   border: 2px solid white;
 }
+@media only screen and (max-width: 800px) {
+  #content .hero-left {
+    display: none;
+  }
+  #content .hero-right {
+    display: none;
+  }
+  #content .hero-main {
+    grid-column: 1/-1;
+  }
+}
 #content .hero-caption {
   grid-column: 1/-1;
   text-align: center;
@@ -77,6 +88,32 @@ body {
 }
 #content .main-content * {
   margin: 2% 0;
+}
+#content .main-content #contact-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  text-shadow: 2px 2px white;
+  padding-bottom: 0;
+}
+#content .main-content #phone {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#content .main-content .contact-form {
+  margin: 0 auto;
+  display: flex;
+  max-width: 400px;
+  padding: 1%;
+  flex-direction: column;
+  background-color: #caa486;
+  border: 2px solid rgba(0, 0, 0, 0.493);
+}
+#content .main-content .contact-form * {
+  margin: 2px;
+}
+#content .main-content .contact-form #message-area {
+  height: 100px;
 }
 #content .main-content .hours-loc {
   display: flex;
