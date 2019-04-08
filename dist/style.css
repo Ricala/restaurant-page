@@ -53,15 +53,15 @@ body {
   border-bottom: 2px solid rgba(26, 25, 25, 0.541);
   border-top: 2px solid rgba(26, 25, 25, 0.541);
 }
-#content .about {
+#content .main-content {
   grid-column: 2/-2;
   background-color: #eed3bc;
   padding: 1%;
 }
-#content .about * {
+#content .main-content * {
   margin: 2% 0;
 }
-#content .about .hours-loc {
+#content .main-content .hours-loc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -70,15 +70,15 @@ body {
   font-size: 1.2rem;
   border: 2px solid #caa486;
 }
-#content .about .hours-loc .main-descrip {
+#content .main-content .hours-loc .main-descrip {
   flex: 0 0 50%;
 }
-#content .about .hours-loc * {
+#content .main-content .hours-loc * {
   border-left: 1px solid rgba(0, 0, 0, 0.24);
   border-right: 1px solid rgba(0, 0, 0, 0.24);
   padding: 10px;
 }
-#content .about .order-options {
+#content .main-content .order-options {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -88,32 +88,32 @@ body {
   text-shadow: 1px 1px white;
   border: 3px solid #eccfaa;
 }
-#content .about #testimonials {
+#content .main-content #testimonials {
   display: flex;
   justify-content: space-around;
 }
-#content .about #testimonials .test-section {
+#content .main-content #testimonials .test-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#content .about #testimonials .test-section small {
+#content .main-content #testimonials .test-section small {
   font-size: 0.8rem;
 }
-#content .about #testimonials .test-section .test-img {
+#content .main-content #testimonials .test-section .test-img {
   background-size: cover;
   border: 3px solid black;
   border-radius: 50%;
   height: 150px;
   width: 150px;
 }
-#content .about #testimonials .test-section #chick-img {
+#content .main-content #testimonials .test-section #chick-img {
   background-image: url(../images/chicken.png);
 }
-#content .about #testimonials .test-section #cow-img {
+#content .main-content #testimonials .test-section #cow-img {
   background-image: url(../images/cow.png);
 }
-#content .about #testimonials .test-section #pig-img {
+#content .main-content #testimonials .test-section #pig-img {
   background-image: url(../images/pig.png);
 }
 #content footer {
