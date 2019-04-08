@@ -32,8 +32,6 @@ function hoursAndLocation() {
   addressContainer.appendChild(addressText);
   container.appendChild(addressContainer);
 
-
-
   return container;
 }
 

@@ -1,6 +1,7 @@
 import {appendFrame} from './base-frame'
 import {appendAbout} from './about'
 import {appendMenu} from './menu'
+import {appendContact} from './contact'
 
 const content = document.getElementById('content');
 appendFrame(content);
@@ -15,8 +16,9 @@ const contactBtn = document.querySelector('#contactTab');
 const switchTabs = (() => {
   aboutBtn.addEventListener('click',function(){manageChildren('about'), switchButtons('about')}, false);
   menuBtn.addEventListener('click',function(){manageChildren('menu'), switchButtons('menu')}, false);
-  contactBtn.addEventListener('click',function(){switchButtons('contact')}, false);
+  contactBtn.addEventListener('click',function(){manageChildren('contact'), switchButtons('contact')}, false);
 
+  //set initial tab to about
   switchButtons("about");
 
   function manageChildren(child) {
@@ -36,7 +38,9 @@ const switchTabs = (() => {
     else if(child == "menu") {
       appendMenu(mainContent);
     }
-    else {}
+    else{
+      appendContact(mainContent);
+    }
   }
 
   function switchButtons(btn) {

@@ -55,7 +55,7 @@ function menuItem(menuItem) {
         title = "Big Burger"
         break;
       case "ribs":
-        title = "Lamb Ribs"
+        title = "Pork Ribs"
         break;
       case "steak":
         title = "New York Strip"
