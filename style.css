@@ -170,13 +170,13 @@ body {
   width: 150px;
 }
 #content .main-content #testimonials .test-section #chick-img {
-  background-image: url(../images/chicken.png);
+  background-image: url(images/chicken.png);
 }
 #content .main-content #testimonials .test-section #cow-img {
-  background-image: url(../images/cow.png);
+  background-image: url(images/cow.png);
 }
 #content .main-content #testimonials .test-section #pig-img {
-  background-image: url(../images/pig.png);
+  background-image: url(images/pig.png);
 }
 #content .menu-items {
   border: 2px solid rgba(0, 0, 0, 0.562);
@@ -200,23 +200,23 @@ body {
   margin: 1%;
 }
 #content .menu-items #menu-burger {
-  background-image: url(../images/burger.png);
+  background-image: url(images/burger.png);
 }
 #content .menu-items #menu-ribs {
-  background-image: url(../images/ribs.png);
+  background-image: url(images/ribs.png);
 }
 #content .menu-items #menu-steak {
-  background-image: url(../images/steak.png);
+  background-image: url(images/steak.png);
 }
 #content .menu-items #menu-fish {
-  background-image: url(../images/fish.png);
+  background-image: url(images/fish.png);
   background-position: bottom 10px;
 }
 #content .menu-items #menu-ice-cream {
-  background-image: url(../images/ice-cream.png);
+  background-image: url(images/ice-cream.png);
 }
 #content .menu-items #menu-pie {
-  background-image: url(../images/pie.png);
+  background-image: url(images/pie.png);
   background-position: left;
 }
 #content footer {
