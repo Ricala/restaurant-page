@@ -9,17 +9,15 @@ function appendContact(parent) {
 
 function contactTitle() {
   let title = document.createElement('h3');
-  title.appendChild(document.createTextNode("Reach out to us"));
+  title.id = "contact-title"
+  title.appendChild(document.createTextNode("Reach Out To Us"));
 
   return title;
 }
 
 function phoneNumber() {
   let container = document.createElement('div');
-
-  let phoneNumberMessage = document.createElement('h5');
-  phoneNumberMessage.appendChild(document.createTextNode("Give us a call"));
-  container.appendChild(phoneNumberMessage);
+  container.id = "phone";
 
   let phoneNumber = document.createElement('h6');
   phoneNumber.appendChild(document.createTextNode("(555) 555-1234"));
@@ -31,28 +29,42 @@ function phoneNumber() {
 function contactForm() {
   let form = document.createElement('form');
   form.setAttribute('method', 'post');
+  form.className ="contact-form";
+
+  let userNameDisplay = document.createElement('h4');
+  userNameDisplay.appendChild(document.createTextNode("Name:"))
 
   let userName = document.createElement('input');
   userName.setAttribute("type", "text");
   userName.setAttribute("name", "username")
-  userName.placeholder = "Your Name";
+  userName.placeholder = "John Smith";
 
-  let title = document.createElement('input');
-  title.setAttribute("type", "text");
-  title.setAttribute("name", "title")
-  title.placeholder = "Your Title";
+  let emailDisplay = document.createElement('h4');
+  emailDisplay.appendChild(document.createTextNode("Email:"))
 
-  let message = document.createElement('input');
+  let email = document.createElement('input');
+  email.setAttribute("type", "text");
+  email.setAttribute("name", "email")
+  email.placeholder = "Jsmith@fake.com";
+
+  let messageDisplay = document.createElement('h4');
+  messageDisplay.appendChild(document.createTextNode("Message:"))
+
+  let message = document.createElement('textarea');
   message.setAttribute("type", "textarea");
-  message.setAttribute("name", "title")
-  message.placeholder = "Enter your Message";
+  message.setAttribute("name", "title");
+  message.id = "message-area"
+  message.placeholder = "Your message..";
 
   let submit = document.createElement('input');
   submit.setAttribute("type", "submit");
-  submit.setAttribute("value", "Submit");
+  submit.setAttribute("value", "Send your message");
 
+  form.appendChild(userNameDisplay);
   form.appendChild(userName);
-  form.appendChild(title);
+  form.appendChild(emailDisplay);
+  form.appendChild(email);
+  form.appendChild(messageDisplay);
   form.appendChild(message);
   form.appendChild(submit);
 
